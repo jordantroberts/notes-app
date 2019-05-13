@@ -1,12 +1,14 @@
 (function(exports) {
-  function testNoteList() {
+  function testAddItem() {
     var note = new NoteList();
     note.addItem("hello")
     note.addItem("bonjour")
-    note.addItem("hola")
-    if(note.getItem() !== ["hello", "bonjour", "hola"]) {
-    throw new Error("No list");
+
+    if(note.list.join() !== "hello,bonjour") {
+      throw new Error("Note not added");
+      } else {
+      console.log("Note added successfully")
     };
   };
-  testNoteList();
+  testAddItem();
 })(this);
