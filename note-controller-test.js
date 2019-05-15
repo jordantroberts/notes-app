@@ -8,11 +8,11 @@
 (function(exports){
   function testNoteControllerCanBeInstantiated(){
     var notelist = new Notelist()
-    var controller = new Controller(notelist)
+    var controller = new NoteController(notelist)
 
     if (!controller instanceof NoteController){
       throw new Error("Controller not instantiated properly")
     }
   }
   testNoteControllerCanBeInstantiated()
-})(this); 
+})(this);
