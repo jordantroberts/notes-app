@@ -13,7 +13,6 @@
   testAddNote();
 })(this);
 
-
 (function(exports) {
   function testGetNotes() {
     var notelist = new NoteList();
