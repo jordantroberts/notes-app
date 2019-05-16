@@ -10,5 +10,5 @@ function NoteController(notelist, noteview) {
 };
 
 NoteController.prototype.updateDOM = function(){
-  document.getElementById('app').innerHTML = this.noteview.display()
-}; // fix this
+  return document.getElementById('app').innerHTML = this.noteview.display()
+};
