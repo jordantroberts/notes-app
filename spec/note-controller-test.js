@@ -44,5 +44,3 @@
   }
 testInnerHTML()
 })(this);
-
-// mocking the controller because otherwise you'd actually be updating the view which we don't want
