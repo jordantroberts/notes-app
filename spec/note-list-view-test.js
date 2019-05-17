@@ -7,6 +7,12 @@
     if(noteview.display()!== "<ul><li><div>hello</div></li><li><div>bonjour</div></li></ul>") {
       throw new Error("No notes");
     }
+
+    notelist.addNote("abcdefghijklmnopqrstuvwxyz")
+
+    if(noteview.display() == "<ul><li><div>hello</div></li><li><div>bonjour</div></li><li><div>abcdefghijklmnopqrstuvwxyz</div></li></ul>") {
+      throw new Error("Should only display first 20 characters of the note!")
+    }
   };
 
   testDisplay();
