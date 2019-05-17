@@ -6,8 +6,6 @@
 
     if(notelist.getNotes().length !== 2) {
       throw new Error("Note not added");
-      } else {
-      console.log("Note added successfully")
     };
   };
   testAddNote();

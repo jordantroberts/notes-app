@@ -28,3 +28,9 @@ So I can see all the information in the note
 ## Learning Objectives
 * Write unit tests without using a testing library
 * write a frontend, single page app using only pure JavaScript
+
+## To Fix
+
+## Acknowledgments
+
+Jordan Roberts - Makers Academy Challenge

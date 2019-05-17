@@ -1,6 +1,6 @@
 (function(exports) {
   function NoteList() {
-    this.list = [ ];
+    this.list = [];
   };
 
 NoteList.prototype.setID = function(note) {
