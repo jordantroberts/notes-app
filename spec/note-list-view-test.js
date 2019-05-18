@@ -24,7 +24,7 @@
     notelist.addNote("abcdefghijklmnopqrstuvwxyz")
 
     if(noteview.display() == '<ul><li><div><a href="0">asfjdsfjdsoifjsdofis</a></div></li><li><div><a href="0">hello</a></div></li><li><div><a href="1">bonjour</a></div></li><li><div><a href="2">abcdefghijklmnopqrstuvwxyz</a></div></li></ul>') {
-        hrow new Error("Should only display first 20 characters of the note!")
+      throw new Error("Should only display first 20 characters of the note!")
     }
   };
 testDisplay()

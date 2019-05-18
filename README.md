@@ -23,13 +23,34 @@ So I can see all the information in the note
 * Install Node (a program for running JavaScript on the command line, rather than in a web browser) by running `npm install` from the command line
 * Install `http-server` from npm (a Node-based package manager) by running `npm install http-server` from the command line
 * Enter `node node_modules/http-server/bin/http-server`from the command line
-* Visit http://localhost:8080/
+* Visit http://localhost:8080/ (please note, you may need to clear your browser cache first!)
+* Navigate to the console in Chrome Dev Tools
+* Type in `list = new NoteList()` to begin a new list of notes
+* To add a note, type in `list.addNote('note')` (replacing 'note' for your note)
+* Create a new view by typing `view = new NoteView(list)`
+* Create a new controller by typing `control = new NoteController(list, view)`
+* Update the page by typing in `control.updateDOM()`
+
+Here is a screenshot of the program in action:
+
+<div align="center">
+    <img src="FeatureTest.png" width="800px"</img>
+</div>
+
+You can see that the notes are displayed as links, each with their own ID which will navigate to a new page when clicked (e.g. http://localhost:8080/1) I have yet to implement the feature whereby you will be able to see the full note when you click on that link.
+
+Only the first 20 characters of each note will be displayed on the list, to make it neater :)
+
+## Build Status
+
+Mostly complete, just need to implement the final user story. Tests all passing and have successfully mocked in my tests.
 
 ## Learning Objectives
 * Write unit tests without using a testing library
 * write a frontend, single page app using only pure JavaScript
 
 ## To Fix
+* Implement final user story.
 
 ## Acknowledgments
 
