@@ -5,7 +5,11 @@
   };
 
   Note.prototype.getText = function() {
-    return this.text
-  }
+    return this.text;
+  };
+
+  Note.prototype.getID = function() {
+    return this.id;
+  };
   exports.Note = Note;
 })(this);
