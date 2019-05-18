@@ -11,17 +11,5 @@
     return `<ul>${html}</ul>`
   };
 
-
-
- // NoteListView.prototype.render = function() {
- //   return [
- //     "<form>",
- //       "<input id='text'></input>",
- //       "<input type='submit'></input>",
- //     "</form>",
- //     `${this.htmlString}`
- //   ].join("")
- // };
-
 exports.NoteView = NoteView;
 })(this);

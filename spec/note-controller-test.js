@@ -40,7 +40,7 @@
     var noteview = new NoteViewDouble(notelist)
     var controller = new NoteControllerDouble(notelist, noteview)
 
-    if (controller.updateDOM() !== "<ul><li><div>test</div></li></ul>") {
+    if (controller.updateDOM() !== '<ul><li><div><a href="0">test</a></div></li></ul>') {
       throw new Error("HTML does not match the list!")
     }
   }
