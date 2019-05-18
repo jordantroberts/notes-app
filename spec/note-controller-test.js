@@ -18,10 +18,12 @@
       this.notelist = notelist;
     }
 
+    var html = ""
     NoteViewDouble.prototype.display = function() {
-      var array = this.notelist.list.map(note => note.text).join("</div></li><li><div>")
-      var html = "<ul><li><div>" + array + "</div></li></ul>"
-      return html
+      this.notelist.list.map(function(note) {
+        html += `<li><div><a href="${note.getID()}">${note.text.substring(0,20)}</a></div></li>`
+      });
+      return `<ul>${html}</ul>`
     };
 
     function NoteControllerDouble(notelist, noteview) {
