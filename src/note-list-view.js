@@ -3,11 +3,12 @@
     this.notelist = notelist;
   };
 
-  NoteView.prototype.display = function() {
-   var array = this.notelist.list.map(note => note.text)
-   var substring = array.map(note => note.substring(0,20)).join("</div></li><li><div>")
-   var html = "<ul><li><div>" + substring + "</div></li></ul>"
-   return html
+  var html = ""
+  NoteView.prototype.display = function(notelist) {
+    this.notelist.list.map(function(note) {
+      html += `<li><div><a href="${note.id}">${note.text.substring(0,20)}</a></div></li>`
+    });
+    return `<h2><ul>${html}</ul></h2>`
   };
 
 exports.NoteView = NoteView;

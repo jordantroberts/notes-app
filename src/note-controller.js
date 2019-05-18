@@ -1,12 +1,12 @@
 function changeGreeting(greeting) {
   var element = document.getElementById("app");
-  greeting = "howdy"
+  greeting = " "
   element.innerHTML = greeting
 }
 
 function NoteController(notelist, noteview) {
     this.notelist = notelist;
-    this.noteview = noteview
+    this.noteview = noteview;
 };
 
 NoteController.prototype.updateDOM = function(){

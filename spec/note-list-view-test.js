@@ -6,7 +6,7 @@
 
     if(noteview.display()!== "<ul><li><div>hello</div></li><li><div>bonjour</div></li></ul>") {
       throw new Error("No notes");
-    }
+    } // fix test to include ID
 
     notelist.addNote("abcdefghijklmnopqrstuvwxyz")
 
